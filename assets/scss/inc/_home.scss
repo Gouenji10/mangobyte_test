@@ -1,0 +1,278 @@
+body {
+    &.home {
+        .hero-btn-wrapper {
+            position: relative;
+            left: -80px;
+            top: -4px;
+
+            @media screen and (max-width:767px) {
+                left: 0;
+            }
+
+            .elementor-button-text {
+                border-bottom: 1px solid #fff;
+            }
+        }
+
+        .second-section {
+            .elementor-widget-image-box {
+                .elementor-image-box-img {
+                    img {
+                        width: 75px;
+                        height: 75px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .first-item {
+                .elementor-image-box-wrapper {
+                    .elementor-image-box-img {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .third-item {
+                .elementor-image-box-wrapper {
+                    .elementor-image-box-img {
+                        width: 100%;
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+
+        .choose-section {
+            .toggle-animation-section {
+                .elementor-toggle {
+                    .elementor-toggle-item {
+                        .elementor-tab-title {
+                            border: 0;
+                        }
+
+                        .elementor-tab-content {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .testimonial-section {
+            .testimonial-wrapper {
+                .testimonial-item {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 80px;
+
+                    @media screen and (max-width:767px) {
+                        flex-direction: column;
+                        padding: 0 20px;
+                    }
+
+                    .right-side {
+                        width: 45%;
+                        position: relative;
+
+                        @media screen and (max-width:767px) {
+                            width: 100%;
+                        }
+
+                        .main-image {
+                            text-align: center;
+
+                            img {
+                                margin: 0 auto;
+                                border-radius: 40px;
+                            }
+                        }
+
+                        .company-logo {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            background: rgba(255, 255, 255, 0.9);
+                            padding: 10px;
+                            border-radius: 6px;
+
+                            img {
+                                height: 40px;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .left-side {
+                        width: 55%;
+
+                        @media screen and (max-width:767px) {
+                            width: 100%;
+                        }
+
+                        .content-wrapper {
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 30px;
+                                height: 30px;
+                                background: url('../images/quote.png');
+                                background-repeat: no-repeat;
+                                position: relative;
+                                left: -20px;
+                            }
+
+                            color: #142034;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 32px;
+                            letter-spacing: 0.11px;
+                            padding-left: 20px;
+                        }
+
+                        .author-wrapper {
+                            display: flex;
+                            align-items: center;
+
+                            .author-content {
+                                padding-left: 15px;
+
+                                p {
+                                    &.author {
+                                        color: #142034;
+                                        font-size: 26px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 32px;
+                                    }
+
+                                    color: rgba(20, 32, 52, 0.80);
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    line-height: 28px;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .slick-arrow {
+                    &.slick-prev {
+                        &::before {
+                            content: '';
+                            width: 50px;
+                            height: 50px;
+                            background-image: url('../images/arrow-left.png');
+                            display: block;
+                        }
+                    }
+
+                    &.slick-next {
+                        &::before {
+                            content: '';
+                            width: 50px;
+                            height: 50px;
+                            background-image: url('../images/arrow-right.png');
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .achievement-section {
+            .achievement-wrapper {
+                .slick-list.draggable {
+                    margin-left: 50px;
+
+                    @media screen and (max-width:767px) {
+                        margin-left: unset;
+                    }
+                }
+
+                .achievement-item {
+                    .item-wrapper {
+                        padding-bottom: 10px;
+                        position: relative;
+
+                        .bg-colored {
+                            background-color: #e5eaed;
+                            padding: 30px 30px 30px 20px;
+                            margin-right: 20px;
+                            border-radius: 10px;
+                            height: 260px;
+
+                            .title {
+                                font-size: 48px;
+                                color: #0078D4;
+                                font-weight: 700;
+                                position: relative;
+                                z-index: 999;
+                            }
+
+                            .content {
+                                position: relative;
+                                z-index: 999;
+
+                                p {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+
+                        .image {
+                            position: absolute;
+                            bottom: 0;
+                            right: 20px;
+                            z-index: 1;
+
+                            img {
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+
+                .slick-arrow {
+                    &.slick-prev {
+                        &::before {
+                            content: '';
+                            width: 50px;
+                            height: 50px;
+                            background-image: url('../images/arrow-left.png');
+                            display: block;
+                        }
+                    }
+
+                    &.slick-next {
+                        &::before {
+                            content: '';
+                            width: 50px;
+                            height: 50px;
+                            background-image: url('../images/arrow-right.png');
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .career-section {
+            .elementor-icon-box-wrapper {
+                padding-bottom: 10px;
+                border-bottom: 1px solid #888888;
+
+                .elementor-icon-box-content {
+                    .elementor-icon-box-title {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+body {
+    font-family: 'MarkPro', sans-serif;
+    position: relative;
+
+}
+
+[class*="elementor"] {
+    font-family: 'MarkPro', sans-serif;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    div,
+    .elementor-toggle-title {
+        font-family: 'MarkPro', sans-serif !important;
+    }
+}
+
+#go_top {
+    position: fixed;
+    z-index: 99;
+    bottom: 65px;
+    right: 65px;
+    border-radius: 50%;
+    padding: 10px 14px;
+    background-color: $primary-color;
+    cursor: pointer;
+    @media screen and (max-width:767px) {
+        right: 20px;
+        bottom: 20px;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+
+    }
+}

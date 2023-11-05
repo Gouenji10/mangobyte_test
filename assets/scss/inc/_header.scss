@@ -1,0 +1,74 @@
+body {
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+
+        #header-grid {
+            background-color: transparent !important;
+            transition: all ease-in-out 0.3s;
+
+            .nav-menu-primary {
+                .primary-menu-ul {
+                    align-items: center;
+
+                    li {
+                        &.menu-item {
+                            a {
+                                font-family: 'MarkPro', sans-serif;
+                                color: #fff;
+                                transition: all ease-in-out 0.3s;
+                            }
+                        }
+
+                        &.header-btn {
+                            padding-right: 0;
+
+                            a {
+                                background-color: $primary-color;
+                                color: #fff;
+                                padding: 6px 12px;
+                                border-radius: 4px;
+                                transition: all ease-in-out 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.sticky {
+                background-color: #fff !important;
+                border-bottom: 1px solid #ddd;
+
+                .nav-menu-primary {
+                    .primary-menu-ul {
+                        align-items: center;
+
+                        li {
+                            &.menu-item {
+                                a {
+                                    color: $primary-color;
+
+                                }
+                            }
+
+                            &.header-btn {
+
+                                a {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.admin-bar {
+        header {
+            top: 32px;
+        }
+    }
+}
